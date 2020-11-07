@@ -1,19 +1,19 @@
 <template>
-  <div class="w-screen h-screen">
-    <MainView />
-  </div>
+<div class="flex flex-row">
+    <dashboard/>
+</div>
 
 </template>
 
 <script lang="ts">
 import { defineComponent } from 'vue'
-import MainView from './views/MainView.vue'
+import Dashboard from '../components/Dashboard.vue'
 
 export default defineComponent({
-  name: 'App',
+  name: 'ViewContainer',
 
   components: {
-    MainView
+    Dashboard
   }
 })
 </script>
